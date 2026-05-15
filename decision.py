@@ -80,7 +80,7 @@ if __name__ == "__main__":
     from extractor import extract_invoice_data
     from matcher import match_invoice
 
-    invoice = extract_invoice_data("sample_invoices/invoice_001_happy.pdf")
+    invoice = extract_invoice_data("invoice_001_happy.pdf")
     match = match_invoice(invoice)
     result = make_decision(match)
 
