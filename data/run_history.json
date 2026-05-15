@@ -1,1 +1,119 @@
-
+[
+  {
+    "timestamp": "2026-05-15 08:17:54",
+    "invoice_number": "INV-2026-001",
+    "vendor_name": "Zamp.ai",
+    "po_number": "PO-1001",
+    "grand_total": 324500.0,
+    "decision": "APPROVED",
+    "reasons": [
+      "All checks passed \u2014 invoice matches PO within tolerance"
+    ],
+    "checks": {
+      "missing_fields": [],
+      "is_duplicate": false,
+      "po_found": true,
+      "po_amount": 324500.0,
+      "tolerance_percent": 2.0,
+      "po_status": "open",
+      "po_is_open": true,
+      "vendor_match": true,
+      "amount_within_tolerance": true,
+      "invoice_total": 324500.0
+    }
+  },
+  {
+    "timestamp": "2026-05-15 08:19:08",
+    "invoice_number": "INV-2026-002",
+    "vendor_name": "IBM",
+    "po_number": "PO-1006",
+    "grand_total": 1268500.0,
+    "decision": "FLAGGED",
+    "reasons": [
+      "Amount mismatch \u2014 Invoice: INR 1,268,500.00, PO: INR 523,290.00, Difference: INR 745,210.00"
+    ],
+    "checks": {
+      "missing_fields": [],
+      "is_duplicate": false,
+      "po_found": true,
+      "po_amount": 523290.0,
+      "tolerance_percent": 3.0,
+      "po_status": "open",
+      "po_is_open": true,
+      "vendor_match": true,
+      "amount_within_tolerance": false,
+      "invoice_total": 1268500.0
+    }
+  },
+  {
+    "timestamp": "2026-05-15 08:20:07",
+    "invoice_number": "",
+    "vendor_name": "Swiggy",
+    "po_number": "PO-1003",
+    "grand_total": 265500.0,
+    "decision": "REJECTED",
+    "reasons": [
+      "Missing required fields: invoice_number"
+    ],
+    "checks": {
+      "missing_fields": [
+        "invoice_number"
+      ],
+      "is_duplicate": false,
+      "po_found": true,
+      "po_amount": 265600.0,
+      "tolerance_percent": 5.0,
+      "po_status": "open",
+      "po_is_open": true,
+      "vendor_match": true,
+      "amount_within_tolerance": true,
+      "invoice_total": 265500.0
+    }
+  },
+  {
+    "timestamp": "2026-05-15 08:20:46",
+    "invoice_number": "INV-2026-005",
+    "vendor_name": "Infosys Limited",
+    "po_number": "PO-1002",
+    "grand_total": 1044300.0,
+    "decision": "REJECTED",
+    "reasons": [
+      "PO-1002 is closed \u2014 no further invoices accepted"
+    ],
+    "checks": {
+      "missing_fields": [],
+      "is_duplicate": false,
+      "po_found": true,
+      "po_amount": 1037500.0,
+      "tolerance_percent": 2.0,
+      "po_status": "close",
+      "po_is_open": false,
+      "vendor_match": true,
+      "amount_within_tolerance": true,
+      "invoice_total": 1044300.0
+    }
+  },
+  {
+    "timestamp": "2026-05-15 08:21:11",
+    "invoice_number": "INV-2026-001",
+    "vendor_name": "Zamp.ai",
+    "po_number": "PO-1001",
+    "grand_total": 324500.0,
+    "decision": "REJECTED",
+    "reasons": [
+      "Duplicate invoice \u2014 already processed before"
+    ],
+    "checks": {
+      "missing_fields": [],
+      "is_duplicate": true,
+      "po_found": true,
+      "po_amount": 324500.0,
+      "tolerance_percent": 2.0,
+      "po_status": "open",
+      "po_is_open": true,
+      "vendor_match": true,
+      "amount_within_tolerance": true,
+      "invoice_total": 324500.0
+    }
+  }
+]
