@@ -63,5 +63,5 @@ def extract_invoice_data(pdf_path):
     return parse_invoice_text(raw_text)
 
 if __name__ == "__main__":
-    result = extract_invoice_data("sample_invoices/invoice_001_happy.pdf")
+    result = extract_invoice_data("invoice_001_happy.pdf")
     print(json.dumps(result, indent=2))
