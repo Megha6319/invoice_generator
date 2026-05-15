@@ -2,7 +2,7 @@ import pandas as pd
 import json
 import os
 
-PO_FILE = "data/purchase_orders.csv"
+PO_FILE = "purchase_orders.csv"
 HISTORY_FILE = "data/run_history.json"
 
 def load_pos():
@@ -93,6 +93,6 @@ def match_invoice(invoice_data):
 
 if __name__ == "__main__":
     from extractor import extract_invoice_data
-    invoice = extract_invoice_data("sample_invoices/invoice_001_happy.pdf")
+    invoice = extract_invoice_data("invoice_001_happy.pdf")
     result = match_invoice(invoice)
     print(json.dumps(result, indent=2))
